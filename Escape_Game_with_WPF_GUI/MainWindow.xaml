@@ -1,0 +1,59 @@
+﻿<Window x:Name="GUI_window" x:Class="Escape_Game_with_WPF_GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Mystery of the Villa - v.1.0" Height="706" Width="1109" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="GUI_grid" Margin="0,0,-8,4">
+        <TextBlock x:Name="welcoming_message" HorizontalAlignment="Left" Height="39" Margin="77,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="949" FontSize="16" TextAlignment="Center" TextDecorations="{x:Null}" FontWeight="Bold"><Run Text="Welcome to &quot;"/><Run Text="Mystery"/><Run Text=" "/><Run Text="of"/><Run Text=" the Villa&quot; game"/><Run Text=" "/><Run Text=" "/><Run FontSize="12" Text="(v.1.0)"/><LineBreak/><Run FontSize="12"/><Run FontSize="13" Text="created"/><Run FontSize="13" Text=" 07.2016"/><Run FontSize="13" Text=" by Marcin Bukowski"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="35" Margin="256,100,0,0" TextWrapping="Wrap" Text="Your current location is:" VerticalAlignment="Top" Width="155" FontWeight="Bold" TextDecorations="Underline"/>
+        <TextBlock x:Name="current_location_message" HorizontalAlignment="Left" Height="35" Margin="416,100,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="153"/>
+        <Button x:Name="gotoKitchenButton" Content="go to the kitchen" HorizontalAlignment="Left" Height="28" Margin="31,144,0,0" VerticalAlignment="Top" Width="145" Click="gotoKitchenButton_Click"/>
+        <Button x:Name="gotoLibraryButton" Content="go to the library" HorizontalAlignment="Left" Height="27" Margin="31,193,0,0" VerticalAlignment="Top" Width="145" Click="gotoLibraryButton_Click"/>
+        <Button x:Name="gotoSwimmingPoolButton" Content="go to the swimming pool" HorizontalAlignment="Left" Height="30" Margin="31,235,0,0" VerticalAlignment="Top" Width="145" Click="gotoSwimmingPoolButton_Click"/>
+        <TextBlock x:Name="location_content_display" HorizontalAlignment="Left" Height="145" Margin="257,181,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="259"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="256,140,0,0" TextWrapping="Wrap" Text="Here's what you see in this location:" VerticalAlignment="Top" Width="260" FontWeight="Bold" TextDecorations="Underline"/>
+        <Button x:Name="gotoGardenButton" Content="go to the garden" HorizontalAlignment="Left" Height="31" Margin="31,285,0,0" VerticalAlignment="Top" Width="145" Click="gotoGardenButton_Click"/>
+        <GridSplitter HorizontalAlignment="Left" Height="3" Margin="20,328,0,0" VerticalAlignment="Top" Width="1058" RenderTransformOrigin="0.5,0.5">
+            <GridSplitter.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </GridSplitter.RenderTransform>
+        </GridSplitter>
+        <TextBlock HorizontalAlignment="Left" Height="39" Margin="756,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="259" FontWeight="Bold" TextDecorations="Underline"><Run Text="Here's what you "/><Run Text="are carrying with you"/><Run Text=":"/><LineBreak/><Run Text=""/></TextBlock>
+        <TextBlock x:Name="characters_inventory_display" HorizontalAlignment="Left" Height="255" Margin="755,396,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="260"/>
+        <TextBlock x:Name="game_message" HorizontalAlignment="Left" Height="73" Margin="188,578,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="448" FontFamily="Comic Sans MS" FontSize="14" FontWeight="Bold"><Run Text="Try "/><Run Text="to "/><Run Text="uncover the secret"/><Run Text=" of this beautiful villa"/><Run Text="."/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="38,578,0,0" TextWrapping="Wrap" Text="Game message:" VerticalAlignment="Top" Width="145" FontWeight="Bold" TextDecorations="Underline" TextAlignment="Center"/>
+        <GridSplitter HorizontalAlignment="Left" Height="6" Margin="19,533,0,0" VerticalAlignment="Top" Width="609" RenderTransformOrigin="0.5,0.5">
+            <GridSplitter.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </GridSplitter.RenderTransform>
+        </GridSplitter>
+        <GridSplitter HorizontalAlignment="Left" Height="4" Margin="10,60,0,0" VerticalAlignment="Top" Width="1073" RenderTransformOrigin="0.5,0.5">
+            <GridSplitter.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </GridSplitter.RenderTransform>
+        </GridSplitter>
+        <Button x:Name="pickUpItemButton" Content="pick up ..." HorizontalAlignment="Left" Height="30" Margin="31,342,0,0" VerticalAlignment="Top" Width="145" Click="pickUpItemButton_Click"/>
+        <TextBox x:Name="user_input_box" HorizontalAlignment="Left" Height="53" Margin="203,365,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="407"/>
+        <Button x:Name="leaveItemButton" Content="leave ..." HorizontalAlignment="Left" Height="28" Margin="31,381,0,0" VerticalAlignment="Top" Width="145" Click="leaveItemButton_Click"/>
+        <Button x:Name="operateItemButton" Content="operate ..." HorizontalAlignment="Left" Height="28" Margin="31,418,0,0" VerticalAlignment="Top" Width="145" Click="operateItemButton_Click"/>
+        <GridSplitter HorizontalAlignment="Left" Height="5" Margin="20,459,0,0" VerticalAlignment="Top" Width="609"/>
+        <Button x:Name="useItemWithItemButton" Content="use ..." HorizontalAlignment="Left" Height="29" Margin="31,482,0,0" VerticalAlignment="Top" Width="145" Click="useItemWithItemButton_Click"/>
+        <TextBox x:Name="use_item_input_box_1" HorizontalAlignment="Left" Height="40" Margin="203,479,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="363,485,0,0" TextWrapping="Wrap" Text="... with ..." VerticalAlignment="Top" Width="89" TextAlignment="Center"/>
+        <TextBox x:Name="use_item_input_box_2" HorizontalAlignment="Left" Height="40" Margin="457,479,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+    </Grid>
+</Window>

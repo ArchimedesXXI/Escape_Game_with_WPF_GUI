@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escape_Game_with_WPF_GUI", "Escape_Game_with_WPF_GUI\Escape_Game_with_WPF_GUI.csproj", "{F62A2626-1057-4664-A14D-C222A4845C4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escape_Game_engine_library", "Escape_Game_engine_library\Escape_Game_engine_library.csproj", "{27B48B9E-BB44-422C-9373-7A52F5B035B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escape_Game_engine_library_UnitTest", "Escape_Game_engine_library_UnitTest\Escape_Game_engine_library_UnitTest.csproj", "{2BE62029-69C7-4663-B2A2-E1774E2CD064}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F62A2626-1057-4664-A14D-C222A4845C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F62A2626-1057-4664-A14D-C222A4845C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F62A2626-1057-4664-A14D-C222A4845C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F62A2626-1057-4664-A14D-C222A4845C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27B48B9E-BB44-422C-9373-7A52F5B035B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B48B9E-BB44-422C-9373-7A52F5B035B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B48B9E-BB44-422C-9373-7A52F5B035B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B48B9E-BB44-422C-9373-7A52F5B035B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE62029-69C7-4663-B2A2-E1774E2CD064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE62029-69C7-4663-B2A2-E1774E2CD064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE62029-69C7-4663-B2A2-E1774E2CD064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE62029-69C7-4663-B2A2-E1774E2CD064}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
